@@ -1,0 +1,6 @@
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}", name: "Grades App" %></h2>
+  <p class="lead">Please enter your student ID.</p>
+  <%= text_input :student, :student_id, view: "" %>
+  <%= submit "Submit" %>
+</div>

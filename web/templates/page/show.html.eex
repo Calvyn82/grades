@@ -1,0 +1,3 @@
+<div class="jumbotron">
+  <h2>Your ID is <%= @student_id %>!</h2>
+</div>
