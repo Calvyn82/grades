@@ -16,8 +16,10 @@ defmodule Grades.Router do
   scope "/", Grades do
     pipe_through :browser # Use the default browser stack
 
-    get "/",            PageController,  :new
-    get "/admin",       AdminController, :new
-    get "/:student_id", PageController,  :show
+    get    "/",            PageController,  :new
+    get    "/admin",       AdminController, :new
+    post   "/admin",       AdminController, :create
+    delete "/admin",       AdminController, :delete
+    get    "/:student_id", PageController,  :show
   end
 end
